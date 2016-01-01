@@ -3,6 +3,18 @@
   font-size: 70px;
 }
 
-#site-tagline {
-	  font-family: Oswald, Verdana;
+#site-tagline, #projects-heading{
+  font-family: Oswald, Verdana;
+}
+
+#projects-heading {
+  font-size: 40px;
+  padding-left: 10%;
+  padding-top: 2.5%;
+}
+
+
+
+#projects {
+  padding-left:6.5%;
 }
