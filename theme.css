@@ -42,7 +42,6 @@
 
 #project-info-heading {
   padding-left: 37.5%;
-  padding-right: 35%;
 }
 
 #project-info-paragraph {
@@ -54,6 +53,5 @@
 }
 
 #media {
-  margin: auto;
-  width: 172.5px;
+  padding-left: 35%;
 }
