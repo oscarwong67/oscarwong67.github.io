@@ -14,19 +14,34 @@
 }
 
 #projects-list {
+  position: relative;
   border-style: solid;
   border-width: 5px;
   border-radius: 25px;
   width: 30%;
+  height: 150px;
   padding-left: 5%;
   display: inline-block;
   margin-left: 10%;
   margin-top: 2.5%;
 }
+#projects-heading {
+  position: absolute;
+  font-size: 40px;
+  padding-top: 2.5%;
+}
+
+#projects {
+  position: absolute;
+  left: 14%;
+  top: 60%;
+}
 
 #project-info {
+  position: relative;
   float: right;
   width: 30%;
+  height: 500px;
   border-style: solid;
   border-width: 5px;
   border-radius: 25px;
@@ -35,23 +50,23 @@
   margin-top: 2.5%;
 }
 
-#projects-heading {
-  font-size: 40px;
-  padding-top: 2.5%;
-}
-
 #project-info-heading {
+  position: absolute;
   padding-left: 37.5%;
 }
 
 #project-info-paragraph {
+  position: absolute;
   font-size: 14px;
   font-family: Helvetica;
   text-align: left;
   padding-right: 5%;
   padding-left: 7%;
+  bottom: 5%;
 }
 
 #media {
+  position: absolute;
   padding-left: 35%;
+  top: 15%;
 }
