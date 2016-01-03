@@ -3,18 +3,38 @@
   font-size: 70px;
 }
 
-#site-tagline, #projects-heading{
+#site-tagline,
+#projects-heading, #project-info-heading {
   font-family: Oswald, Verdana;
 }
 
+#projects-info-and-list {
+  position: relative;
+}
+
 #projects-heading {
+  position: absolute;
   font-size: 40px;
   padding-left: 10%;
   padding-top: 2.5%;
 }
 
-
-
 #projects {
-  padding-left:6.5%;
+  padding-left: 6.5%;
+  padding-top: 7%;
+}
+
+#project-info {
+  float: right;
+  position: absolute;
+  padding-right: 10%;
+  left: 65%;
+  top: 20%;
+}
+
+#project-info-paragraph {
+  font-size: 14px;
+  text-align: left;
+  position: absolute;
+  left: -30%;
 }
