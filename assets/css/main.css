@@ -9,7 +9,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -2650,8 +2650,9 @@
 
 		}
 #browse-all {
-  margin-left: 200%;
-  
+  margin-left: -30%;
+  margin-bottom: 0%;
+  display: block;
 }
 
 
@@ -3019,6 +3020,10 @@
 			text-transform: uppercase;
 		}
 
+#wrapper {
+  margin-bottom: -5%;
+}
+
 	@media screen and (max-width: 1280px) {
 
 		#wrapper > header {
@@ -3144,7 +3149,7 @@
 			}
 
 #four {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 		.wrapper.style5 {
