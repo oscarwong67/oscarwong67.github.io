@@ -2835,10 +2835,10 @@
 }
 
 		#banner .logo {
-			-moz-transition: opacity 2s ease, -moz-transform 1s ease;
-			-webkit-transition: opacity 2s ease, -webkit-transform 1s ease;
-			-ms-transition: opacity 2s ease, -ms-transform 1s ease;
-			transition: opacity 2s ease, transform 1s ease;
+			-moz-transition: opacity 1s ease, -moz-transform 1s ease;
+			-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+			-ms-transition: opacity 1s ease, -ms-transform 1s ease;
+			transition: opacity 1s ease, transform 1s ease;
 			-moz-transform: translateY(0);
 			-webkit-transform: translateY(0);
 			-ms-transform: translateY(0);
@@ -3182,9 +3182,10 @@
 #Projects-heading {
   padding-left: 20%;
   font-size: 40px;
-  font-family: Oswald;
+  font-family: Oswald, Verdana;
   display: inline-block;
   padding-bottom: 20px;
+  letter-spacing: 0.1em;
 }
 			.wrapper.spotlight .inner {
 				display: -moz-flex;
