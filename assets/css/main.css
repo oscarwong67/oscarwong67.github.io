@@ -3187,6 +3187,10 @@
   padding-bottom: 20px;
   letter-spacing: 0.1em;
 }
+
+#project-page-content {
+  margin-top: 0%;
+}
 			.wrapper.spotlight .inner {
 				display: -moz-flex;
 				display: -webkit-flex;
