@@ -3102,7 +3102,7 @@
 		}
 
 #wrapper {
-  margin-bottom: -5%;
+  margin-bottom: 5%;
 }
 
 	@media screen and (max-width: 1280px) {
@@ -3183,6 +3183,7 @@
 			transform: scaleY(-1);
 			bottom: -6.5em;
 			left: 0;
+      
 		}
 
 		.wrapper.alt:before {
@@ -3235,6 +3236,7 @@
 
 #four {
   margin-top: -9%;
+  margin-bottom: -10%;
 }
 
 		.wrapper.style5 {
@@ -3461,7 +3463,7 @@
 /* Footer */
 
 #footer {
-  
+  padding-top: 1.5%;
 }
 
 	#footer .inner {
