@@ -1,0 +1,201 @@
+body {
+  background-color: #2e3141;
+}
+
+#background-section {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/29/Moraine_lake_in_Banff_national_park.jpg");
+  background-position: center;
+}
+
+.text-primary {
+  color: white;
+}
+
+/* Nav */
+
+.navbar-static-top {
+  border-radius: 12px;
+  background: none;
+  border-width: 0px;
+  position: relative;
+}
+
+.navbar-nav {
+  padding-left: 1%;
+  margin-bottom: 0%;
+}
+
+.navbar-brand {
+  font-family: Raleway;
+  font-weight: 600;
+}
+
+.navbar-link {
+  margin-bottom: -40%;
+}
+
+.nav-link-text {
+  color: white;
+  font-family: Raleway;
+}
+
+#nav-collapser {
+  border-width: 0px;
+}
+
+#home {
+  color: white;
+}
+
+/* Jumbotron */
+.jumbotron {
+  padding-bottom: 1%;
+  margin-bottom: 1%;
+  padding-top: 2%;
+  margin-top: -1%;
+  background: none;
+  color: white;
+  font-family: Raleway;
+}
+
+#social-media-div {
+  margin: 0px 10px 0px 10px;
+  background-opacity: 0.5;
+}
+
+.social-media {
+  font-size: 14pt;
+  color: white;
+  font-family: Raleway;
+}
+
+i {
+  color: white;
+}
+
+/* Body */
+
+.container{
+  width: 90%;
+}
+
+.row {
+  border-width: 2pt;
+  border-color: white;
+  border-radius: 6px;
+  margin-left: 0.05%;
+  margin-right: 0.05%;
+  margin-bottom: 1%;
+}
+
+h2, h3 {
+  font-family: Oswald;
+  color: white;
+}
+
+h3 {  
+  margin-top: 10px;
+}
+
+#about-row {
+  background: none;
+}
+
+#about-heading {
+  font-family: Raleway;
+  font-size: 30pt;
+}
+
+.about-text {
+  font-size: 14pt;
+  color: white;
+  font-family: Raleway;
+  font-weight: 300;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.project {
+  margin-top: -5px;
+  margin-left: -15px;
+}
+
+.project-inner {  
+  background-color: #3f435a;
+  border-radius: 6px;
+  padding-top: 0.016px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+
+#projects-row-1 {
+  margin-bottom: 5px;
+}
+
+#projects-heading {
+  color: white;
+  font-family: Raleway;
+  font-size: 28pt;
+  font-weight: 500;
+  padding-left: 20px;
+  margin-bottom: -10px;
+}
+
+#projects-divider {
+  margin-left: 20px;
+  margin-right: 100px;
+}
+
+.project-img {  
+  min-width: 150px;
+  max-width: 205px;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 2px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-desc {
+  padding-left: 20px;
+  padding-right: 5px;
+  padding-top: 5px;
+  font-size: 111%;
+  font-family: Raleway;
+  font-weight: 300;
+  color: white;
+}
+
+/*Contact*/
+
+.contact {
+  margin-left: 0;
+  padding-left: 0;
+  color: white;
+}
+
+#footer-header {
+  color: white;
+}
+
+#contact-row {
+  background: none;
+  color: white;
+  font-size: 14pt;
+  font-family: Raleway;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#contact-row i {
+  color: white;
+}
+
+.footer-link {
+  color: white;
+}
+
+#contacts-divider {
+  margin-right: 45px;
+}

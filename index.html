@@ -2,12 +2,23 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Oscar's Portfolio Website - 2.0</title>
-    <link rel="stylesheet" href="http://oscarwong67.github.io/assets/css/font-awesome.min.css"></link>
+    <title>FCC Project - Portfolio Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<title>Oscar Wong</title>
     
     
-    <link rel='stylesheet prefetch' href='http://oscarwong67.github.io/assets/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
         <link rel="stylesheet" href="css/style.css">
 
@@ -18,133 +29,131 @@
 
   <body>
 
-    <!--
-  Solid State by HTML5 UP
-  html5up.net | @n33co
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+    <div id="background-section">
+  <!--Nav BAR-->
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" id="home" href="#">Home</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-collapser">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="nav-collapser" class="collapse navbar-collapse navbar">
+        <ul class="nav navbar-nav">
+          <li class="navbar-item">
+            <a href="#About" class="navbar-link">
+              <p class="nav-link-text">About</p>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#Projects" class="navbar-link">
+              <p class="nav-link-text">Projects</p>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#Contact" class="navbar-link">
+              <p class="nav-link-text">Contact</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<head>
-  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <title>Oscar Wong</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-  <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-</head>
 
-<body>
+  <section class="jumbotron">
+    <h1 class="text-center">Oscar Wong</h1>
+    <a id="About"></a>
+    <div class="row" id="about-row">
+      <article class="col-xs-12 about">
+        <h2 class="text-center text-primary" id="about-heading">Hi There!</h2>
+        <p class="about-text text-center">I am an amateur programmer and aspiring entrepreneur currently in my second-last year of Highschool. I work to develop web and Android applications, working with technologies such as Java and Javascript.</p>
+      </article>
+    </div>
+    <div class="row" id="social-media-div">
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a class="social-media" target="_blank" href="https://github.com/oscarwong67">Github</a> <i class="fa fa-github" aria-hidden="true"></i> &nbsp;
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a class="social-media" target="blank" href="https://twitter.com/call_me_oscar_">Twitter</a> <i class="fa fa-twitter" aria-hidden="true"></i> &nbsp;
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a class="social-media" target="blank" href="https://medium.com/@call_me_oscar_">Medium</a> <i class="fa fa-medium" aria-hidden="true"></i>
+      </div>
+      <div class="col-xs-6 col-sm-3 col-md-3">
+        <a class="social-media" target="blank" href="http://codepen.io/oscarwong67/">CodePen</a> <i class="fa fa-codepen" aria-hidden="true"></i>
+      </div>
+      <div class="opaque"></div>
+    </div>
+  </section>
 
-  <!-- Page Wrapper -->
-  <div id="page-wrapper">
 
-    <!-- Top Banner -->
-    <section id="banner">
-      <div class="inner">
-        <div class="logo"><img class="img" src="https://raw.githubusercontent.com/oscarwong67/oscarwong67.github.io/a57ffa3b5f1310906455ac0df6de88486eba7f1f/images/Wadomp.png"></img>
-        </div>
-        <h2>Oscar Wong</h2>
-        <p>
-          <a target="_blank" href="https://github.com/oscarwong67"><i class="fa fa-github" aria-hidden="true"></i>Github</a>
-          <span class="barcode">       </span>
-          <a target="_blank" href="https://twitter.com/call_me_oscar_"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a>
-          <span class="barcode">       </span>
-          <a target="_blank" href="https://medium.com/@call_me_oscar_"><i class="fa fa-medium" aria-hidden="true"></i>Blog (Medium)</a>
-          <span class="barcode">       </span>
-          <a target="_blank" href="http://codepen.io/oscarwong67/"><i class="fa fa-codepen" aria-hidden="true"></i>CodePen</a>
+</div>
+<div class="container">
+  <a id="Projects"></a>
+  <div class="row" id="projects-row-1">
+    <!--Project #1-->
+    <h2 class="text-left text-primary" id="projects-heading">Featured Projects</h2>
+    <hr id="projects-divider">
+    <article class="col-xs-12 col-sm-6 col-lg-3 project" id="project-1">
+      <div class="project-inner">
+      <h3 class="text-center">Tossy Pizza</h3>
+      <img class="img img-responsive project-img" src="https://lh3.googleusercontent.com/ExWLXKdeboLX1D45P5zlLqKgDh3cCWLBDpCF6_4out9j-8HO6JTUJH3RPmdGiZGCwJox=w300-rw" id="project-img-1">
+      <p class="project-desc">Tossy Pizza is a simple accelerometer-based game available for Android devices. <a target="_blank" href="https://play.google.com/store/apps/details?id=com.OscarWong.TossyPizza"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Download</a></p>
+      </div>
+    </article>
+
+    <!--Project #2-->
+    <article class="col-xs-12 col-sm-6 col-lg-3 project">
+      <div class="project-inner">
+      <h3 class="text-center">Random Design Quote Generator</h3>
+      <img class="img-responsive project-img" id="project-img-2" src="http://oscarwong67.github.io/images/quotegen.PNG">
+      <p class="project-desc">Front-end project that uses the Quotes on Design API in order to generate a random design-related quote. Also dynamically allows users to tweet the text and author of the quote.
+        <a target="_blank" href="http://codepen.io/oscarwong67/pen/eZLQLz"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> View/View Code</a>
       </p>
       </div>
-    </section>
-
-    <!-- Wrapper -->
-    <section id="wrapper">
-      <!-- One -->
-      <section id="one" class="wrapper spotlight style1">
-        <h1 id="Projects-heading">Featured Projects</h1>
-        <div class="inner">
-          <a targe "_blank" class="image" id="img2"><img src="https://lh3.googleusercontent.com/ExWLXKdeboLX1D45P5zlLqKgDh3cCWLBDpCF6_4out9j-8HO6JTUJH3RPmdGiZGCwJox=w300-rw" alt="" /></a>
-          <div class="content">
-            <h2 class="major">Tossy Pizza</h2>
-            <p>Tossy Pizza is a simple touch and accelerometer-based game available for Android devices. </p>
-            <a target="_blank" href="https://play.google.com/store/apps/details?id=com.OscarWong.TossyPizza" class="special">Download (Android)</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Two -->
-      <section id="two" class="wrapper alt spotlight style2">
-        <div class="inner">
-          <a href="#" class="image" id="img2"><img src="http://oscarwong67.github.io/images/quotegen.PNG" alt="" /></a>
-          <div class="content" id="divof2">
-            <h2 class="major">Random Design Quote Generator</h2>
-            <p>Front-end web development project that uses the Quotes on Design API in order to generate a random design-related quote. Also dynamically allows users to tweet the text and author of the quote.</p>
-            <a href="http://codepen.io/oscarwong67/pen/eZLQLz" class="special">View/View Code</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Three -->
-      <section id="three" class="wrapper spotlight style3">
-        <div class="inner">
-          <a href="#" class="image" id="img3"><img src="http://oscarwong67.github.io/images/pic03.jpg" alt="" /></a>
-          <div class="content" id="divof2">
-            <h2 class="major">Insert Project Here</h2>
-            <p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra,
-              ex nulla cursus.</p>
-            <a href="#" class="special">Learn more</a>
-            <ul class="actions">
-              <li><a href="oscarwong67.github.io/projects" class="button" id="browse-all">Browse All Projects</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Four -->
-      <section id="four" class="wrapper alt style1" id="wrapper4">
-        <div class="inner">
-          <h2 class="major">About Me</h2>
-          <p>I am an amateur programmer and aspiring entrepreneur currently in my second-last year of Highschool. I work to develop web and Android applications, working with technologies such as Java and Javascript. </p>
-        </div>
-      </section>
-    </section>
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="inner">
-        <ul class="contact">
-          <li class="fa-home">
-            Oscar Wong
-            <br /> Calgary, Alberta, Canada
-          </li>
-          <li class="fa-phone">(403) 807-3388</li>
-          <li class="fa-envelope"><a href="#">oscar@wadomp.com</a></li>
-          <li class="fa-twitter"><a href="#">twitter.com/call_me_oscar_</a></li>
-        </ul>
-        <ul class="copyright">
-          <li>&copy; Oscar Wong All rights reserved.</li>
-          <li>Design: <a href="http://html5up.net">HTML5 UP</a> and Oscar Wong</li>
-        </ul>
+    </article>
+    <!--Project #3-->
+    <article class="col-xs-12 col-sm-6 col-lg-3 project">
+      <div class="project-inner">
+      <h3 class="text-center">Project #3</h3>
+      <img class="img-responsive project-img" id="project-img-3" src="http://oscarwong67.github.io/images/pic03.jpg">
+      <p class="project-desc">cum at consetetur ullamcorper. Laoreet evertitur id vim. At rebum falli novum has. Pri <a target="_blank" href="">Download</a></p>
       </div>
-    </section>
-
+    </article>
+    <!--Project #4-->
+    <article class="col-xs-12 col-sm-6 col-lg-3 project">
+      <div class="project-inner">
+      <h3 class="text-center">Project #4</h3>
+      <img class="img-responsive project-img" id="project-img-4" src="https://pixabay.com/static/uploads/photo/2015/10/01/21/39/background-image-967820_960_720.jpg">
+      <p class="project-desc">Audire dolores platonem his in, per id ancillae evertitur vulputate. Ius quod quaerendum persequeris ad. <a target="_blank" href="">Download</a></p>
+      </div>
+    </article>
   </div>
+  <!--Contact-->
+  <a id="Contact"></a>
+  <div class="row" id="contact-row">
+    <section class="col-xs-12">
+      <h2 id="footer-header">Get in Touch</h2>
+        <hr id="contacts-divider">
+        <ul class="contact">
+          <p><i class="fa fa-home"></i> Oscar Wong, Calgary, Alberta, Canada
+          </p>
+          <p><i class="fa fa-phone"></i> (403) 807-3388</p>
+          <p><a href="#"><i class="fa fa-envelope"></i> oscar@wadomp.com</a></p>
+          <p><a href="#"><i class="fa fa-twitter"></i> twitter.com/call_me_oscar_</a></p>
+        </ul>
+    </section>
+  </div>
+</div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
 
-  <!-- Scripts -->
-  <script src="assets/js/skel.min.js"></script>
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-  <script src="assets/js/main.js"></script>
+        <script src="js/index.js"></script>
 
-</body>
-
-</html>
-    
-    
     
     
     
