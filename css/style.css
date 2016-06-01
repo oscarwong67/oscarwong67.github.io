@@ -31,7 +31,7 @@ body {
 }
 
 .navbar-link {
-  margin-bottom: -40%;
+  padding-top: 10px;
 }
 
 .nav-link-text {
@@ -41,6 +41,8 @@ body {
 
 #nav-collapser {
   border-width: 0px;
+  position: static;
+  overflow: hidden;
 }
 
 #home {
@@ -90,6 +92,7 @@ i {
 
 h2, h3 {
   font-family: Oswald;
+  font-weight: 400;
   color: white;
 }
 
@@ -164,7 +167,7 @@ h3 {
   font-size: 111%;
   font-family: Raleway;
   font-weight: 300;
-  color: white;
+  color: #e6e6e6;
 }
 
 /*Contact*/
