@@ -1,2 +1,6 @@
 .vscode/launch.json
 css/bootstrap.min.css
+jquery-3.0.0.min.js
+jquery-ui.min.css
+jquery-ui.min.js
+/images
