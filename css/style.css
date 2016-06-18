@@ -191,8 +191,7 @@ h3 {
   color: white;
   font-size: 14pt;
   font-family: Raleway;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-left: -15px;
 }
 
 #contact-row i {
