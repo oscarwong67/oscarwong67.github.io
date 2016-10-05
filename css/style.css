@@ -118,9 +118,12 @@ h3 {
   padding-right: 10px;
 }
 
+.col-xs-12 {
+  padding-left: 0;
+}
+
 .project {
   margin-top: -5px;
-  margin-left: -15px;
 }
 
 .project-inner {  
@@ -132,7 +135,7 @@ h3 {
 }
 
 #projects-row-1 {
-  margin-bottom: 5px;
+  margin-bottom: 5px;  
 }
 
 #projects-row-2 {
