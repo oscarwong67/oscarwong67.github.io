@@ -24,40 +24,5 @@ function colours() {
     $('#project-img-' + i).css({ 'border-color': random_color });
   }
 }
-
-function showButtons() {
-  if ($('#projects-row-1').is(':visible')) {
-    $('#page-toggle-left').hide();
-  }
-  else if ($('#projects-row-2').is(':visible')) {
-    $('#page-toggle-left').show();
-    $('#page-toggle-right').show();    
-  }
-  else {
-    $('#page-toggle-right').hide();
-  }
-}
-showButtons();
-
-$('.page-toggle').click(function () {
-  for (var q = 1; q <= 3; q++) {
-    var str = '#projects-row-' + q;    
-    if ($(str).is(':visible')) {
-      break;
-    }
-  }
-  if ($(this).attr('id') === 'page-toggle-right') {
-    q++;
-    strTwo = '#projects-row-' + q;
-    strList = str + ", " + strTwo;
-  }
-  else {
-    q--;
-    strTwo = '#projects-row-' + q;
-    strList = str + ", " + strTwo;    
-  }
-  $(strList).slideToggle(function () {
-    showButtons();
-  });
   
 });
