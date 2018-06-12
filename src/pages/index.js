@@ -1,47 +1,102 @@
 import React, { Component } from 'react';
 
+const styles = {
+  btnContainerStyle: {
+    display: 'flex',
+    justifyContent: 'space-evenly'
+  },
+  buttonStyle: {
+    backgroundColor: 'Transparent',
+    color: 'white',
+    border: '2px solid white',
+    borderRadius: 4,
+    flex: 1,
+    fontFamily: 'Open Sans, Helvetica',
+    paddingTop: 5,
+    paddingBottom: 5,
+    maxWidth: '7vw',
+    cursor: 'pointer'
+  },
+  hoverButtonStyle: {
+    backgroundColor: '#7dc87d',
+    color: 'white',
+    border: '2px solid white',
+    borderRadius: 4,
+    flex: 1,
+    fontFamily: 'Open Sans, Helvetica',
+    paddingTop: 5,
+    paddingBottom: 5,
+    maxWidth: '7vw',
+    cursor: 'pointer'
+  }
+}
+
 class IndexPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: 'white',
-      bg: 'Transparent'
+      LinkedInStyle: styles.buttonStyle,
+      GitHubStyle: styles.buttonStyle,
+      ResumeStyle: styles.buttonStyle,
+      TwitterStyle: styles.buttonStyle,
+      DevStyle: styles.buttonStyle
     }
   }
   link = (e) => {
     window.open(e.target.value, '_blank');
   }
-  hover = () => {
-    console.log('hover');
-    this.setState({
-      color: '#95e195',
-      bg: 'white'
-    })    
+  hover = (e) => {
+    const type = e.target.name;
+    if (type === "LinkedIn") {
+      this.setState({
+        LinkedInStyle: styles.hoverButtonStyle
+      });
+    } else if (type === "GitHub") {
+      this.setState({
+        GitHubStyle: styles.hoverButtonStyle
+      });
+    } else if (type === "Resume") {
+      this.setState({
+        ResumeStyle: styles.hoverButtonStyle
+      });
+    } else if (type === "Twitter") {
+      this.setState({
+        TwitterStyle: styles.hoverButtonStyle
+      });
+    } else if (type === "Dev") {
+      this.setState({
+        DevStyle: styles.hoverButtonStyle
+      });
+    }
   }
-  leave = () => {
-    this.setState({
-      color: 'white',
-      bg: 'Transparent'
-    })    
+  leave = (e) => {    
+    const type = e.target.name;
+    if (type === "LinkedIn") {
+      this.setState({
+        LinkedInStyle: styles.buttonStyle
+      }, () => {
+        
+      });
+    } else if (type === "GitHub") {
+      this.setState({
+        GitHubStyle: styles.buttonStyle
+      });
+    } else if (type === "Resume") {
+      this.setState({
+        ResumeStyle: styles.buttonStyle
+      });
+    } else if (type === "Twitter") {
+      this.setState({
+        TwitterStyle: styles.buttonStyle
+      });
+    } else if (type === "Dev") {
+      this.setState({
+        DevStyle: styles.buttonStyle
+      });
+    }
   }
   render() {
-    const styles = {
-      btnContainerStyle: {
-        display: 'flex',
-        justifyContent: 'space-evenly'
-      },
-      buttonStyle: {
-        backgroundColor: this.state.bg,
-        color: this.state.color,
-        border: '2px solid ' + this.state.color,
-        flex: 1,
-        fontFamily: 'sans-serif',
-        paddingTop: 15,
-        paddingBottom: 15,
-        maxWidth: '8vw',
-        cursor: 'pointer'
-      }
-    }
+
     return (
       <div style={{
         display: 'flex',
@@ -50,7 +105,7 @@ class IndexPage extends Component {
         fontFamily: 'sans-serif',
         width: '100%',
         textAlign: 'center',
-        backgroundColor: '#95e195',
+        backgroundColor: '#7dd77d',
         color: 'white',
         padding: '40px 40px 40px 40px',
         boxShadow: '5px 5px 5px 0px rgba(0,0,0,0.75)'
@@ -58,11 +113,11 @@ class IndexPage extends Component {
         <h1>Hello, I'm Oscar.</h1>
         <h3>I'm a software engineering student from Calgary, Canada.</h3>
         <div style={styles.btnContainerStyle}>
-          <button style={styles.buttonStyle} onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://www.linkedin.com/in/oscarwong67/">LinkedIn</button>
-          <button style={styles.buttonStyle} onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://github.com/oscarwong67">GitHub</button>
-          <button style={styles.buttonStyle} onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://onedrive.live.com/?authkey=%21AJHmQcvDdaQQH1k&cid=ECA46CBC458F57B3&id=ECA46CBC458F57B3%211429&parId=ECA46CBC458F57B3%21469&o=OneUp">Resume</button>
-          <button style={styles.buttonStyle} onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://twitter.com/call_me_oscar_">Twitter</button>
-          <button style={styles.buttonStyle} onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://dev.to/call_me_oscar_">Dev.to (Blog)</button>
+          <button style={this.state.LinkedInStyle} name="LinkedIn" onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://www.linkedin.com/in/oscarwong67/">LinkedIn</button>
+          <button style={this.state.GitHubStyle} name="GitHub" onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://github.com/oscarwong67">GitHub</button>
+          <button style={this.state.ResumeStyle} name="Resume" onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://onedrive.live.com/?authkey=%21AJHmQcvDdaQQH1k&cid=ECA46CBC458F57B3&id=ECA46CBC458F57B3%211429&parId=ECA46CBC458F57B3%21469&o=OneUp">Resume</button>
+          <button style={this.state.TwitterStyle} name="Twitter" onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://twitter.com/call_me_oscar_">Twitter</button>
+          <button style={this.state.DevStyle} name="Dev" onClick={this.link} onMouseEnter={this.hover} onMouseLeave={this.leave} value="https://dev.to/call_me_oscar_">Dev.to (Blog)</button>
         </div>
       </div>
     );
