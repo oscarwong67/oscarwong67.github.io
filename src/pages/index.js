@@ -2,31 +2,31 @@ import React, { Component } from 'react';
 
 const styles = {
   btnContainerStyle: {
-    display: 'flex',
-    justifyContent: 'space-evenly'
+    display: 'grid',
+    gridGap: 5,
+    gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))',
+    //gridTemplateRows: 'repeat(3, 100px)',
+    columnGap: '1.5em',
+    gridAutoRows: 'auto'
   },
   buttonStyle: {
     backgroundColor: 'Transparent',
     color: 'white',
     border: '2px solid white',
-    borderRadius: 4,
-    flex: 1,
-    fontFamily: 'Open Sans, Helvetica',
-    paddingTop: 5,
-    paddingBottom: 5,
-    maxWidth: '7vw',
+    fontFamily: 'Roboto, Helvetica', 
+    fontWeight: 300,   
+    height: 65,
+    //maxWidth: '7vw',
     cursor: 'pointer'
   },
   hoverButtonStyle: {
     backgroundColor: '#7dc87d',
     color: 'white',
     border: '2px solid white',
-    borderRadius: 4,
-    flex: 1,
-    fontFamily: 'Open Sans, Helvetica',
+    fontFamily: 'Roboto, Helvetica',
     paddingTop: 5,
     paddingBottom: 5,
-    maxWidth: '7vw',
+    //maxWidth: '7vw',
     cursor: 'pointer'
   }
 }
