@@ -6,7 +6,7 @@ body {
   align-items: center;
   background-color: rgb(193, 218, 227);
   color: black;
-  font-family: Noto Sans, Roboto, San Francisco, Helvetica, Arial;
+  font-family: Noto Sans, Roboto, San Francisco, SF Pro Text, Helvetica, Arial;
 }
 
 .main-card {
