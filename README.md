@@ -1,4 +1,4 @@
-Oscar Wong's Personal Site
+# oscarwong.me
 
 This repository is my personal site. If for whatever bizarre reason you'd like to contribute:
 
