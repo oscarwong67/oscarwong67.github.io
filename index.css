@@ -10,8 +10,8 @@ body {
 }
 
 .main-card {
-  /* background-color: #fafafa; */
-  max-width: 65vw;
+  background-color: rgb(193, 218, 227);
+  max-width: 70vw;
   text-align: left;
   padding: 40px 40px 40px 40px;
   /* box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75); */
@@ -37,7 +37,7 @@ body {
 @media only screen and (min-width: 1024px) and (max-height: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .main-card {
     /* background-color: #fafafa; */
-    max-width: 82.5vw;
+    max-width: 85vw;
   }
 }
 
