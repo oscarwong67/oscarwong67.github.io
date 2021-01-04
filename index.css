@@ -7,6 +7,7 @@ body {
   background-color: rgb(193, 218, 227);
   color: black;
   font-family: Noto Sans, Roboto, San Francisco, SF Pro Text, sans-serif, Helvetica, Arial;
+  height: 100%;
 }
 
 .main-card {
