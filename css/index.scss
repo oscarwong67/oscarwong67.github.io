@@ -1,0 +1,238 @@
+// Colors
+$background: rgb(193, 218, 227);
+$primary: rgb(0, 122, 94);
+$secondary: #3498db;
+
+body {
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  overflow: auto;
+  margin-top: 0;
+}
+
+#oscar-title-animated span {
+  animation: swapBetweenTitles 3s infinite 0s;
+  -ms-animation: swapBetweenTitles 3s infinite 0s;
+  -webkit-animation: swapBetweenTitles 3s infinite 0s;
+  opacity: 0;
+  position: absolute;
+}
+
+#oscar-title-animated span:nth-child(2) {
+  animation-delay: 1s;
+  -ms-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
+
+#oscar-title-animated span:nth-child(3) {
+  animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+}
+
+@keyframes swapBetweenTitles {
+  0%,
+  33% {
+    opacity: 1;
+  } /* visible for 1s */
+  33.01%,
+  100% {
+    opacity: 0;
+  } /* hidden for 2s */
+}
+
+nav button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.active {
+  border: $primary;
+  outline: none;
+  text-decoration: underline;
+}
+
+#main-nav {
+  // default to bottom for mobile first
+  position: fixed;
+  justify-self: flex-end;
+  height: auto;
+  width: 100vw;
+  display: flex;
+  padding-top: 2px;
+  z-index: 1000;
+  bottom: 0;
+  top: auto;
+  justify-content: space-evenly;
+  background-color: $background;
+  border-top: 2px solid white;
+
+  /* Tablets and Bigger */
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    background-color: $background;
+    width: 50vw;
+    margin-bottom: 10px;
+    border-top: none;
+  }
+}
+
+#main-nav > button {
+  border: none;
+  background-color: $background;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 150%;
+  height: auto;
+  border: 1px solid black;
+
+  /* Tablets and Bigger */
+  @media only screen and (min-width: 768px) {
+    // max-width: 40%;
+    max-height: 80%;
+  }
+
+  /* Desktops */
+  @media only screen and (min-width: 992) {
+    // max-width: 30%;
+  }
+}
+
+.img-wide { 
+  max-width: 95vw;
+
+  /* Tablets and Bigger */
+  @media only screen and (min-width: 768px) {
+    max-width: 80vw;
+  }
+
+  /* Desktops */
+  @media only screen and (min-width: 992px) {
+    max-width: 50vw;
+  }
+}
+
+.main-container {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.main-container-long {
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-self: flex-start;
+  min-height: 0;
+}
+
+.main-container, .main-container-long {
+  padding-bottom: 50px;  
+  max-width: 100vw;
+  border-collapse: collapse;
+  
+  /* Tablets and Bigger */
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 0;
+    max-width: 80vw;
+  }
+}
+
+table {
+  max-width: 100vw;
+  border-collapse: collapse;
+
+  /* Tablets and Bigger */
+  @media only screen and (min-width: 768px) {
+    max-width: 80vw;
+  }
+}
+
+/* Zebra striping */
+tr:nth-of-type(odd) {
+  background: #eee;
+}
+
+th {
+  background: $secondary;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+  font-size: 18px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  /* Desktops */
+  @media only screen and (min-width: 992px) {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.card-section {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  align-self: center;
+  width: 100%;
+
+  padding: 0em;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  
+  /* Tablets and Bigger */
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.contact-container ul {
+  margin-top: 10px;
+
+  /* Tablets and Bigger */
+  @media only screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  font-size: 1.1em;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li:before {
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-color: transparent #111;
+  border-style: solid;
+  border-width: 4px 0  4px 4px;
+  margin-right: .5em;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
