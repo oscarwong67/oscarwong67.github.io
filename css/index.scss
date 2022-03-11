@@ -236,3 +236,17 @@ ul li:before {
 ul li {
   margin-bottom: 5px;
 }
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: flex-start;
+}
+
+.btn-container > a {
+    margin-right: 12.5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+}
